@@ -94,8 +94,8 @@ $ClientId = "CLIENT_ID"
 #-----------------------------------------------------------------------
 $BufferUrl = "https://api.bufferapp.com/1/updates/create.json?access_token=$AccessToken"
 
-if($Text.Length -gt 112) {
-  Write-Error "The tweet length is longer than 112 characters. It is $($Text.Length) The format is TEXT | URL."
+if($Text.Length -gt 252) {
+  Write-Error "The tweet length is longer than 252 characters. It is $($Text.Length) The format is TEXT | URL."
   return;
 }
 
